@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+a.active {
+  background: #e3f2fd;
+  font-weight: 600;
+}
