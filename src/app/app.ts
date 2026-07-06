@@ -1,13 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Layout } from './shared/components/layout/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,
+  imports: [
     Layout
   ],
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.scss'
 })
 export class App {

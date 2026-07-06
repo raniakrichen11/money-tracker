@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { inject } from '@angular/core';
 import { TransactionService } from '../../../../core/services/transaction.service';
 
@@ -6,6 +6,7 @@ import { TransactionService } from '../../../../core/services/transaction.servic
   selector: 'app-transactions',
   imports: [],
   templateUrl: './transactions.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './transactions.scss',
 })
 export class Transactions {
