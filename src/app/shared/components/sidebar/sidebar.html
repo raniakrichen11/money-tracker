@@ -1,29 +1,55 @@
-<h2>Money Tracker</h2>
+<h2 class="logo">
 
-<nav>
+  <mat-icon>account_balance_wallet</mat-icon>
+
+  Money Tracker
+
+</h2>
+
+<mat-nav-list>
 
   <a
+    mat-list-item
     routerLink="/dashboard"
     routerLinkActive="active">
-    Dashboard
+
+    <mat-icon matListItemIcon>dashboard</mat-icon>
+
+    <span matListItemTitle>Dashboard</span>
+
   </a>
 
   <a
+    mat-list-item
     routerLink="/transactions"
     routerLinkActive="active">
-    Transactions
+
+    <mat-icon matListItemIcon>payments</mat-icon>
+
+    <span matListItemTitle>Transactions</span>
+
   </a>
 
   <a
+    mat-list-item
     routerLink="/categories"
     routerLinkActive="active">
-    Categories
+
+    <mat-icon matListItemIcon>category</mat-icon>
+
+    <span matListItemTitle>Categories</span>
+
   </a>
 
   <a
+    mat-list-item
     routerLink="/settings"
     routerLinkActive="active">
-    Settings
+
+    <mat-icon matListItemIcon>settings</mat-icon>
+
+    <span matListItemTitle>Settings</span>
+
   </a>
 
-</nav>
+</mat-nav-list>
