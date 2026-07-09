@@ -1,0 +1,20 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+mat-card {
+  padding: 1rem;
+}
+
+mat-card-title {
+  font-size: 1rem;
+  color: #666;
+}
+
+mat-card-content {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
