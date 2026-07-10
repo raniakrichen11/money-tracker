@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+}
+
+mat-card {
+    margin-top: 2rem;
+}
+
+.mat-column-actions {
+    width: 120px;
+}
+
+.income {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.expense {
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: #757575;
+
+    mat-icon {
+        font-size: 4rem;
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1rem;
+    }
+}

@@ -17,33 +17,9 @@ export class SummaryCards {
 
   private transactionService = inject(TransactionService);
 
-  transactions = this.transactionService.transactions;
-
-  savings = computed(() => {
-  const income = this.income();
-
-  if (income === 0) {
-    return 0;
-  }
-
-  return Math.round((this.balance() / income) * 100);
-});
-
-
-  income = computed(() =>
-    this.transactions()
-      .filter(t => t.type === 'income')
-      .reduce((sum, t) => sum + t.amount, 0)
-  );
-
-  expenses = computed(() =>
-    this.transactions()
-      .filter(t => t.type === 'expense')
-      .reduce((sum, t) => sum + t.amount, 0)
-  );
-
-  balance = computed(() =>
-    this.income() - this.expenses()
-  );
+  readonly balance = this.transactionService.balance;
+  readonly income = this.transactionService.income;
+  readonly expenses = this.transactionService.expenses;
+  readonly savings = this.transactionService.savings;
 
 }

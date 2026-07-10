@@ -1,0 +1,14 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+button {
+  height: 56px;
+}
+
+mat-card {
+  margin-bottom: 2rem;
+}
